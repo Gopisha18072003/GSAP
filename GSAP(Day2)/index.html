@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page1">
+      <nav>
+        <h1><span>C</span>oucher</h1>
+        <div id="nav-part2">
+          <h3>Service</h3>
+          <h3>About us</h3>
+          <h3>Cases</h3>
+        </div>
+        <h4>Sign up</h4>
+      </nav>
+      <div id="container">
+        <div id="left">
+          <h1>Unlimited</h1>
+          <h1>Pretendious</h1>
+          <h1>
+            <span>
+              <img
+                src="/GSAP(Day2)/images/gift-habeshaw-KBv5dEN3QtY-unsplash.jpg"
+                alt=""
+              />
+              <img
+                src="/GSAP(Day2)/images/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                alt=""
+                id="profile-1"
+              />
+              <img
+                src="/GSAP(Day2)/images/sigmund-a19OVaa2rzA-unsplash.jpg"
+                alt=""
+                id="profile-2"
+              />
+            </span>
+            ideas
+          </h1>
+          <div id="buttom">
+            <h4>Our solutions</h4>
+            <h4>We provide the full funnel approach</h4>
+          </div>
+        </div>
+        <div id="right">
+          <p>your bussiness boost</p>
+          <div id="input">
+            <input type="text" placeholder="Book Demo Call" /><span
+              >&#8594;</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page2">
+      <div id="container">
+        <div id="col1" class="box">
+          <div id="row1">
+            <span>&#9654;</span>
+            <p>Let's See<br />How We Do It</p>
+          </div>
+          <div id="row2">Web Analytics</div>
+          <br />
+          <div id="row3">Email Marketing</div>
+          <br />
+          <div id="row4">SEO 2.0</div>
+        </div>
+        <div id="col2" class="box">
+          <p>unique<br />bussiness solutions</p>
+          <i class="fa-solid fa-rocket fa-2xl"></i>
+        </div>
+        <div id="col3" class="box">
+          <span>&#8599;</span>
+          <h3>our case studies</h3>
+        </div>
+        <div id="col4" class="box">
+          <h5>
+            successful <br />
+            Projects
+          </h5>
+          <h1>700+</h1>
+        </div>
+      </div>
+    </div>
+    <div id="page3"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+        //smooth scroll
+      const lenis = new Lenis();
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
+  </body>
+</html>

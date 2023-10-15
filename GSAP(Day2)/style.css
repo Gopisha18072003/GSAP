@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gilroy';
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/Gilroy-Medium.ttf') format('truetype');
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 14, 14)
+}
+
+#page1 {
+    color: rgb(235, 235, 235);
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    padding: 0 30px;
+    margin-bottom: 200px;
+}
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav h1 {
+    margin: 0;
+}
+nav h1 span {
+    color:aquamarine;
+    line-height: 120px;
+}
+nav #nav-part2,nav h4 {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+#container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    margin: 64px 0;
+}
+#left {
+    height: 100%;
+    width: 50%;
+}
+#right {
+    height: 100%;
+    width: 50%;
+}
+#left h1 {
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+#left span {
+    display: inline-block;
+}
+#left span img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border: 4px solid  rgb(14, 14, 14);
+    border-radius: 50%;
+}
+#profile-1 {
+    margin-left: -48px;
+}
+#profile-2 {
+    margin-left: -46px;
+}
+
+#buttom {
+    margin-top: 12px;
+    padding: 12px 0 0 0;
+    border-top: 1px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+    gap: 320px;
+    font-weight: 200;
+    height: 80px;
+    overflow: hidden;
+}
+#buttom h4 {
+    font-weight: 200;
+}
+#buttom h4:nth-child(2) {
+    text-align: right;
+}
+
+#right {
+    background-image: url(autumn-goodman-vTL_qy03D1I-unsplash.jpg);
+    margin-left: 80px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+}
+#right p {
+    text-transform: uppercase;
+    color:rgb(14, 14, 14);
+    width: 20%;
+    margin: 16px 32px;
+    font-size: 12px;
+}
+#input {
+    display: flex;
+    align-items: center;
+}
+#input {
+    width: calc(100%-72px);
+    margin: 16px 32px;
+    border: 2px solid rgb(14, 14, 14);
+    border-radius: 24px;
+}
+#input input {
+    width: 81%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    color:rgb(14, 14, 14);
+    margin-left: 36px;
+ 
+}
+input::placeholder {
+    color: rgb(14, 14, 14);
+    font-weight: 600;
+}
+input:focus {
+    border:none;
+    background-color: transparent;
+    outline: none;
+}
+#input span {
+    width: 36px;
+    height: 36px;
+    padding: 9px 10px;
+    background-color: rgb(14, 14, 14);
+    border-radius: 50%;
+}
+
+#container {
+    width: 100%;
+    height: 50%;
+    padding: 0 30px;
+    display: flex;
+    gap: 4px;
+}
+
+#col1 {
+    width: 25%;
+    color: rgb(235, 235, 235);
+    padding: 16px 0;
+}
+#col2 {
+    width: 25%;
+    text-transform: uppercase;
+    color: rgb(14, 14, 14);
+    background-color: #FD5E09;
+    border-radius: 12px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#col3 {
+    width: 25%;
+    text-transform: uppercase;
+    color: rgb(14, 14, 14);
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#col4 {
+    width: 25%;
+    text-transform: uppercase;
+    color: rgb(14, 14, 14);
+    background-color: #FDC959;
+    border-radius: 12px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#row1 {
+    display: flex;
+    gap: 10px;
+}
+#row1 span {
+    padding: 12px 16px;
+    background-color: #e0e0e0;
+    color: rgb(14, 14, 14);
+    border-radius: 50%;
+    margin-bottom: 32px;
+
+}
+#row2, #row3, #row4 {
+    display: inline-block;
+    padding: 8px 8px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 18px;
+    margin: 4px 0;
+}
+#col2 p {
+    font-weight: 600;
+}
+#col2 i {
+    font-size: 80px;
+    margin-bottom: 40px;;
+}
+#col3 span, #col3 h3 {
+    font-size: 30px;
+}
+#col4 h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#page3 {
+    width: 100%;
+    height: 100%;
+}
