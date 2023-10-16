@@ -1,5 +1,38 @@
 
-let tl = gsap.timeline();
+let tlLoader = gsap.timeline();
+
+    let element = document.querySelector('#loader h1');
+    let count=0;
+    function time(){
+        let Interval = setInterval(function(){
+        
+            count += Math.floor(Math.random()*20);
+            if(count<100){
+                element.textContent = count + "%";
+            }else{
+                element.textContent = "100%";
+                stopInterval();
+            }
+        }, 150);
+    }
+    
+
+function stopInterval() {
+    clearInterval(Interval);
+}
+
+tlLoader.to('#loader h1', {
+    scale: 2,
+    duration: 2,
+    delay: 0.2,
+    onStart: time()
+})
+tlLoader.to('#loader', {
+    y: "-100vh",
+    duration: 0.5
+})
+
+tl = gsap.timeline();
 tl.to('#page1 h1', {
     transform: "translateX(-106%)",
     scrollTrigger: {
