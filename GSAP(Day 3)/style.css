@@ -1,0 +1,83 @@
+@font-face {
+    font-family: head;
+    src: url(./Heading-Now-Variable.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: head, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+   
+}
+
+#page1 {
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+#page1 nav {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 32px 0 32px;
+    margin: 0;
+    align-items: center;
+}
+#logo {
+    font-family: head, sans-serif;
+    font-size: 4vw;
+    font-stretch: 890%;
+    font-weight: 300;
+    text-align: start;
+    width: 30%;
+}
+#logo sup {
+    font-family: head;
+    font-size: 0.4vw;
+}
+#nav2 ul{
+    list-style-type: none;
+    display: flex;
+    gap: 8vw;
+    width: 40%;
+    font-size: 1.2vw;
+    font-stretch: 3000%;
+    font-weight: 200;
+}
+#nav2 ul li:nth-child(3){
+    margin-left: 6vw;
+}
+#page1 h1 {
+    font-family: head;
+    font-size: 44vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-stretch: 250%;
+    font-weight: 999;
+    color: #fff;
+    line-height: 72vh;
+    margin: 0 32px;
+}
+#page2 {
+    width: 100%;
+    height: 100vh;
+}
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+}
